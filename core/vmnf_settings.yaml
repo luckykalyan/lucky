@@ -1,0 +1,68 @@
+# -*- coding: utf-8 -*-
+#  __ _
+#   \/imana 2016
+#   [|-ramewørk
+#
+#
+# Author: s4dhu
+# Email: <s4dhul4bs[at]prontonmail[dot]ch
+# Git: @s4dhulabs
+# Mastodon: @s4dhu
+# 
+# This file is part of Vimana Framework Project.
+
+project:
+    author: s4dhu
+    email: <s4dhul4bs[at]prontonmail.ch>
+    git: https://github.com/s4dhulabs/vimana-framework
+    name: Vimana Framework
+    site: https://s4dhulabs.github.io/
+    tag: alpha
+    version: v0.8
+settings:
+    arg_parser:
+        require_args:
+        - --save-case
+        - --target
+        - --file
+        - --ip-range
+        - --cidr-range
+        - --target-list
+        - --port
+        - --port-list
+        - --port-range
+        - --fuzzer
+        - --proxy
+        - --proxy-type
+        - --nmap-xml
+        - --abduct
+        - --module
+        - --session
+        - --target-url
+        - --project-dir
+        - --target-dir
+        - --project
+        - -m
+    case_set:
+        cases_path: core/cases/
+        cases_yf: core/cases/*.yaml
+        empty_msg: '[{}] It seems like you didn''t create any case yet, or they were
+            flushed.'
+    sessions: core/sessions/
+    siddhis_set:
+        dir: siddhis/
+        list:
+        - djunch
+        - 2pacx
+        - prana
+        - dmt
+        - flame
+        - caiman
+        - sttinger
+        - jungle
+        - viwec
+        - atlatl
+        - viewscan
+        - tictrac
+    utils:
+        random_headers: res/random_headers.yaml
